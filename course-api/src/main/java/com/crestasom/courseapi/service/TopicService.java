@@ -14,6 +14,10 @@ public class TopicService {
 			Arrays.asList(new Topic("spring", "Spring Framework", "Spring Framework Description"),
 					new Topic("java", "Core Java", "Core Java Description"),
 					new Topic("javascript", "Javascript", "Javascript Description")));
+	
+	public TopicService() {
+		System.out.println("Service is created");
+	}
 
 	public List<Topic> getTopics() {
 		return topics;
