@@ -1,4 +1,4 @@
-package com.crestasom.springmvctutorial.entity;
+package com.crestasom.springcrud.entity;
 
 public class Person {
 
@@ -6,15 +6,15 @@ public class Person {
 	private String name;
 	private String email;
 
-	public Person() {
-
-	}
-
 	public Person(int id, String name, String email) {
 		super();
 		this.id = id;
 		this.name = name;
 		this.email = email;
+	}
+
+	public Person() {
+		// TODO Auto-generated constructor stub
 	}
 
 	public int getId() {
@@ -43,7 +43,8 @@ public class Person {
 
 	@Override
 	public String toString() {
-		return "Person [id=" + id + ", name=" + name + ", email=" + email + "]";
+		// TODO Auto-generated method stub
+		return name;
 	}
 
 }

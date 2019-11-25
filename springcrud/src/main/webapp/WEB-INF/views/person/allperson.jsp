@@ -8,16 +8,23 @@
 <title>Person List</title>
 </head>
 <body>
-	<H3>Person List</H3>
+	<h3>
+		<a href="add">Add New Person</a>
+	</h3>
 	<table>
-		<tr>
+		<thead>
 			<td>Name</td>
 			<td>Email</td>
-		</tr>
-		<c:forEach var="person" items="${persons}">
+			<td>Update</td>
+			<td>Delete</td>
+		</thead>
+		<c:forEach var="person" items="${persons }">
 			<tr>
 				<td>${person.name}</td>
 				<td>${person.email}</td>
+				<td><a href="update/${person.id }">Update</a></td>
+				<td><a href="delete/${person.id }"
+					onclick="return confirm('Are you sure you want to delete this person?')">Delete</a></td>
 			</tr>
 		</c:forEach>
 	</table>
