@@ -1,10 +1,10 @@
-package com.crestasom.courseapi.controller;
+package com.example.demo.resources;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class HelloController {
+public class HomeResource {
 
 	@RequestMapping("/")
 	public String sayHi() {
@@ -20,4 +20,5 @@ public class HelloController {
 	public String user() {
 		return "<h2>hello user</h2>";
 	}
+
 }
